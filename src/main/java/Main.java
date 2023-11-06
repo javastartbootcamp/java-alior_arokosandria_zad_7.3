@@ -4,7 +4,6 @@ import java.util.Map;
 
 public class Main {
 
-
     public static void main(String[] args) throws FileNotFoundException {
         List<Integer> list = Files.readFile();
         Map<Integer, Integer> mapList = MatematicOperations.sumCount(list);

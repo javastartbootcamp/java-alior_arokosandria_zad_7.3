@@ -8,7 +8,7 @@ import static java.lang.Double.parseDouble;
 
 public class Files {
     public static List<Integer> readFile() throws FileNotFoundException {
-        List<Integer> numberList=new ArrayList<>();
+        List<Integer> numberList = new ArrayList<>();
         File file = new File("liczby.txt");
         try (Scanner scanner = new Scanner(file)) {
             while (scanner.hasNextLine()) {
