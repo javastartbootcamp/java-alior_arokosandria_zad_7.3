@@ -11,8 +11,8 @@ public class Files {
         List<Integer> numberList = new ArrayList<>();
         File file = new File("liczby.txt");
         try (Scanner scanner = new Scanner(file)) {
-            while (scanner.hasNextLine()) {
-                int elements = Integer.valueOf(scanner.nextLine());
+            while (scanner.hasNextInt()) {
+                int elements = scanner.nextInt();
                 numberList.add(elements);
             }
         }
